@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'HeliosExtLight';
+    src: url('fonts/HeliosExtLight/HeliosExtLight.eot');
+    src: url('fonts/HeliosExtLight/HeliosExtLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/HeliosExtLight/HeliosExtLight.woff2') format('woff2'),
+        url('fonts/HeliosExtLight/HeliosExtLight.woff') format('woff'),
+        url('fonts/HeliosExtLight/HeliosExtLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

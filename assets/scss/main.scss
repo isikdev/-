@@ -1,0 +1,283 @@
+@import "_reset";
+@import "_root";
+body {
+    font-family: "HeliosExtLight";
+}
+.container {
+    max-width: 1260px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.btn {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.467;
+    background: $gradient;
+    color: #fff;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px 0px #6d6d6d71;
+    transition: all 0.3s ease;
+    max-width: 320px;
+    margin: 0 auto;
+    &:hover {
+        box-shadow: 0px 15px 5px 0px #6d6d6d71;
+    }
+}
+.info {
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom-right-radius: 350px;
+    padding: 20px 0;
+    &__brand {
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__intro {
+        text-align: center;
+        margin: 70px auto;
+        h1 {
+            font-size: 32px;
+            color: rgb(46, 112, 110);
+            text-transform: uppercase;
+            line-height: 0.571;
+            text-align: center;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgb(120, 93, 138);
+            line-height: 1.467;
+            text-align: center;
+            max-width: 640px;
+            margin: 20px auto;
+        }
+    }
+}
+.banner {
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+    &__img-1 {
+        position: absolute;
+        left: -20%;
+        top: 10%;
+    }
+    &__img-2 {
+        position: absolute;
+        right: -20%;
+        top: 10%;
+    }
+    &__intro {
+        text-align: center;
+        margin: 0 auto;
+        h1 {
+            font-size: 32px;
+            color: rgb(46, 112, 110);
+            text-transform: uppercase;
+            line-height: 0.571;
+            text-align: center;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgb(120, 93, 138);
+            line-height: 1.467;
+            text-align: center;
+            max-width: 640px;
+            margin: 20px auto;
+        }
+        p {
+            max-width: 960px;
+            margin: 2dvh auto;
+            text-align: center;
+        }
+    }
+}
+.form {
+    background-color: $gray;
+    padding: 100px 0;
+    margin: 0px auto;
+    border-top-right-radius: 350px;
+    &__intro {
+        h1 {
+            font-size: 32px;
+            color: rgb(46, 112, 110);
+            text-transform: uppercase;
+            line-height: 0.571;
+            text-align: center;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgb(120, 93, 138);
+            line-height: 1.467;
+            text-align: center;
+            max-width: 640px;
+            margin: 20px auto;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        margin: 0 auto;
+        input {
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 20px;
+            border: 0px none;
+            outline: 0px none;
+            box-shadow: 0px 10px 5px 0px #6d6d6d45;
+            transition: all .3s ease;
+            font-size: 16px;
+            font-weight: 400;
+            &:hover {
+                box-shadow: 0px 15px 5px 0px #6d6d6d45;
+            }
+            &:active {
+                box-shadow: 0px 15px 5px 0px #6d6d6d45;
+            }
+            &:focus {
+                box-shadow: 0px 15px 5px 0px #6d6d6d45;
+            }
+        }
+        button {
+            margin: 20px auto;
+        }
+    }
+}
+.footer {
+    background-color: $gray1;
+    padding: 20px 0;
+    &__content {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            color: rgb(120, 93, 138);
+            line-height: 1.467;
+            text-align: center;
+            max-width: 640px;
+            margin: 20px auto;
+        }
+    }
+    &__block-link {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        img {
+            &:nth-child(1) {
+                width: 22px;
+                height: 14px;
+            }
+            &:nth-child(2) {
+                width: 22px;
+                height: 23px;
+            }
+            &:nth-child(3) {
+                width: 22px;
+                height: 30px;
+            }
+        }
+        a {
+            margin: 0 5px;
+        }
+    }
+}
+.pre__footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1250px) {
+    .info {
+        background-size: cover;
+        padding: 50px 0;
+    }
+    .banner {
+        &__img-1 {
+            left: -40%;
+        }
+        &__img-2 {
+            right: -40%;
+        }
+        &__intro p {
+            max-width: 100%;
+        }
+    }
+    .form {
+        background-size: cover;
+        padding: 150px 0;
+    }
+    .pre__footer-content {
+        flex-wrap: wrap;
+        a {
+            margin: 10px auto;
+        }
+    }
+}
+@media screen and (max-width: 660px){
+    .info__intro h1 {
+        font-size: 28px;
+        line-height: unset;
+    }
+    .info__intro h3 {
+        font-size: 18px;
+    }
+    .info {
+        border-bottom-right-radius: 0;
+    }
+    .form {
+        border-top-right-radius: 0;
+    }
+    .form__intro h1 {
+        line-height: unset;
+    }
+    .footer__content {
+        flex-wrap: wrap;
+    }
+    .footer__block {
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    .banner {
+        &__img-1 {
+            display: none;
+        }
+        &__img-2 {
+            display: none;
+        }
+    }
+    .pre__footer-content {
+        a {
+            text-align: center;
+        }
+    }
+    .info__intro {
+        h1 {
+            font-size: 23px;
+        }
+    }
+    .banner__intro {
+        h1 {
+            font-size: 23px;
+        }
+    }
+    .form__intro {
+        h1 {
+            font-size: 23px;
+        }
+    }
+}
